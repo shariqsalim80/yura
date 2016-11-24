@@ -1,0 +1,35 @@
+<ion-view style="" id="page1" title="Inbox">
+  <ion-content class="has-header" padding="true">
+    <h1 style="color: rgb(220, 95, 95); text-align: center;" id="page-heading1">Chat B</h1>
+    <!--click-for-options-wrapper
+    click-for-options -->
+    <ion-list  show-delete="false" show-reorder="false" can-swipe="false" swipe-direction="both" id="page-list1">
+
+        <ion-item  ng-repeat="item in items"
+                  item="item"
+                   ng-if="item.delstatus == 0" ng-style="(item.read != 0) ? {'background-color':'green'}:''" >
+         <!-- <ion-option-button side="left" class="ion-minus-circled"
+                             ng-click="onItemDelete(item)">
+
+          </ion-option-button>-->
+          <span >{{ item.msg }}</span>
+          <div style="float: right!important;right: 0!important;position: fixed;margin-top: -22px;margin-right: 20px;">
+          <button class=" icon ion-eye" style="margin: 0 7px 0 0px;background-color: dodgerblue;color: white;" ng-click="readMessage(item)">
+          </button>
+          <button class="icon ion-ios-close" style="margin: 0 7px 0 0px;background-color: red;color: white;"  ng-click="onItemDelete(item)">
+          </button>
+          </div>
+
+
+        <!--  <ion-option-button side="right" class="button-assertive"
+                             ng-click="readMessage(item)">
+            Read
+          </ion-option-button>-->
+
+
+        </ion-item>
+
+      </ion-list>
+  </ion-content>
+
+</ion-view>

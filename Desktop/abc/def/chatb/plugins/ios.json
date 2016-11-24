@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.phonegap.plugins.PushPlugin": {
+            "PACKAGE_NAME": "com.saivennapps.merchantpilot"
+        },
+        "cordova-plugin-logtofile": {
+            "PACKAGE_NAME": "com.saivennapps.merchantpilot"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.saivennapps.merchantpilot"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.saivennapps.merchantpilot"
+        }
+    },
+    "dependent_plugins": {}
+}

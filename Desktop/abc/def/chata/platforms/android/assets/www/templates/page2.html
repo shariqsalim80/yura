@@ -1,0 +1,30 @@
+<ion-view style="" id="page2" title="Messages" >
+  <ion-content>
+
+      <!-- The list directive is great, but be sure to also checkout the collection repeat directive when scrolling through large lists -->
+      
+      <ion-list >
+
+        <ion-item ng-repeat="item in items" 
+                  item="item"
+                  >
+          {{ item.msg }}
+            <div style="float:right">
+            <icon  ng-if="item.delstatus==1" class="ion-minus-circled"></icon>&nbsp;&nbsp;
+            <icon ng-if="item.read==1" class="ion-eye" style="margin-left:5px;"></icon>
+            </div>
+            <!--<ion-option-button class="button-assertive"
+                               ng-click="edit(item)">
+              Edit
+            </ion-option-button>
+            <ion-option-button class="button-calm"
+                               ng-click="share(item)">
+              Share
+            </ion-option-button>
+            <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)"></ion-reorder-button>-->
+        </ion-item>
+
+      </ion-list>
+
+    </ion-content>
+</ion-view>
